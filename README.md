@@ -5,7 +5,7 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 项目分为四层：
 
 - `SKILL.md`：主 skill，负责理解用户目标，并路由到合适的工作流、任务 skill 或原子服务。
-- `workflow-skills/`（如存在）：复杂工作流。当前仓库暂未包含独立 workflow skill 文件，已实现工作流位于 `scripts/workflows/`。
+- `workflow-skills/`：复杂工作流，例如默认口播内容生产。
 - `task-skills/`：输入输出明确的任务能力，例如公众号封面、抖音视频下载、参考视频分析、口播视频、声音、数字人等内容生产任务。
 - `scripts/services/`：稳定的 API 原子服务，例如生图、图生视频、TTS、视频处理、素材管理等。
 
@@ -80,7 +80,7 @@ git pull --ff-only
 
 ### Workflow Skills
 
-当前仓库暂未包含独立 `workflow-skills/` 入口。工作流级能力目前位于 `scripts/workflows/`，通过 CLI 调用。
+- `koubo`：默认口播内容生产工作流。先用 `gpt-image2`（即 gpt-image-2）生成/确认口播形象图，再准备脚本、声音参考、口播视频/片段包、可选封面和运行产物。
 
 ### Task Skills
 
@@ -114,7 +114,7 @@ shotfun-creator is a skill collection for AI content production across images, v
 The repository is organized into four layers:
 
 - `SKILL.md`: the main routing skill. It interprets the user's goal, chooses an available workflow skill, task skill, or atomic service, and reports final artifacts.
-- `workflow-skills/` (if present): curated multi-step workflows for complex outcomes. This repository currently keeps implemented workflows under `scripts/workflows/`.
+- `workflow-skills/`: curated multi-step workflows for complex outcomes, such as the default talking-head content workflow.
 - `task-skills/`: reusable task-level skills with clear inputs and outputs, such as cover images, video download and analysis, talking-head videos, audio, digital humans, and other content production tasks.
 - `scripts/services/`: atomic API-level services. Keep these stable and implementation-focused.
 
@@ -191,7 +191,7 @@ Restart Codex again after updating, because `SKILL.md` and nested skill files ar
 
 ### Workflow Skills
 
-No standalone `workflow-skills/` entries are included in this repository yet. Workflow-level behavior currently lives in `scripts/workflows/` and is invoked through the CLI where available.
+- `koubo`: default talking-head content workflow. It first generates or confirms the presenter image with `gpt-image2` (also referred to as gpt-image-2), then prepares the script, voice reference, talking-head video or clip package, optional cover, and run artifacts.
 
 ### Task Skills
 

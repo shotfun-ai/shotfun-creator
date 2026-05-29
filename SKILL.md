@@ -84,6 +84,7 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 
 | 用户意图 | 优先读取 | 推荐命令 |
 | --- | --- | --- |
+| 默认口播内容生产、口播形象图、口播视频、封面和可复用口播工作流 | `workflow-skills/koubo.md` | 先用 `gpt-image2`（即 gpt-image-2）生成/确认口播形象图，再按工作流规划脚本、声音、视频和封面 |
 | 公众号文章一体化写作、封面和发布到草稿箱 | `task-skills/wechat-write-publish-allinone.md` | 先生成标题/正文/封面，再按发布条件推送到草稿箱 |
 | 公众号封面图 | `task-skills/wechat-cover-image.md` | `node scripts/cli/image-generate.js ...` |
 | 小红书/RedNote 图片卡片或卡片系列 | `task-skills/xhs-images-gen.md` | `node scripts/cli/image-generate.js --model gpt-image2 ...` |
