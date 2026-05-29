@@ -7,7 +7,6 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 - `SKILL.md`：主 skill，负责理解用户目标，并路由到合适的工作流、任务 skill 或原子服务。
 - `workflow-skills/`：复杂工作流，例如默认口播内容生产。
 - `task-skills/`：输入输出明确的任务能力，例如公众号封面、抖音视频下载、参考视频分析、口播视频、声音、数字人等内容生产任务。
-- `references/pricing.md`：用户询问价格、费用、积分或成本时展示的价格参考表。
 - `scripts/services/`：稳定的 API 原子服务，例如生图、图生视频、TTS、视频处理、素材管理等。
 
 优先使用能完整覆盖目标的最高层能力；只有没有合适 workflow/task skill 时，才下钻到 CLI 或 atomic service。
@@ -127,7 +126,6 @@ The repository is organized into four layers:
 - `SKILL.md`: the main routing skill. It interprets the user's goal, chooses an available workflow skill, task skill, or atomic service, and reports final artifacts.
 - `workflow-skills/`: curated multi-step workflows for complex outcomes, such as the default talking-head content workflow.
 - `task-skills/`: reusable task-level skills with clear inputs and outputs, such as cover images, video download and analysis, talking-head videos, audio, digital humans, and other content production tasks.
-- `references/pricing.md`: the pricing reference shown when users ask about price, cost, credits, or billing.
 - `scripts/services/`: atomic API-level services. Keep these stable and implementation-focused.
 
 Use the highest layer that fully matches the user's intent. Drop down only when the higher layer does not exist or is too broad.
