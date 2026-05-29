@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-label="Ecosystem Orbit visual grammar example">
+  <rect width="720" height="1080" fill="#f6f1e7"/>
+  <rect x="48" y="54" width="624" height="972" rx="22" fill="#fffaf1" stroke="#111827" stroke-width="2"/>
+  <text x="72" y="112" fill="#687386" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">VISUAL GRAMMAR</text>
+  <text x="72" y="154" fill="#111827" font-family="Arial, sans-serif" font-weight="700" font-size="34">Ecosystem Orbit</text>
+  <text x="72" y="190" fill="#687386" font-family="Arial, sans-serif" font-size="18">ecosystem_orbit</text>
+  <g transform="translate(72 238)"><circle cx="286" cy="312" r="176" fill="none" stroke="#c9bfae" stroke-width="3"/><circle cx="286" cy="312" r="100" fill="none" stroke="#c9bfae"/><circle cx="286" cy="312" r="54" fill="#1f5fae" opacity=".18" stroke="#1f5fae"/><circle cx="286" cy="136" r="30" fill="#b07a32"/><circle cx="456" cy="312" r="30" fill="#087957"/><circle cx="286" cy="488" r="30" fill="#b84b3f"/><circle cx="118" cy="312" r="30" fill="#1f5fae"/><rect x="150" y="590" width="272" height="70" rx="10" fill="white" stroke="#c9bfae"/></g>
+  <rect x="72" y="938" width="576" height="46" rx="6" fill="#e8e1d5" stroke="#c9bfae"/>
+  <text x="96" y="968" fill="#111827" font-family="Arial, sans-serif" font-size="18">Replace with generated preview when producing a real library.</text>
+</svg>

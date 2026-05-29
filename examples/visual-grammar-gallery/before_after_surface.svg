@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-label="Before / After Surface visual grammar example">
+  <rect width="720" height="1080" fill="#f6f1e7"/>
+  <rect x="48" y="54" width="624" height="972" rx="22" fill="#fffaf1" stroke="#111827" stroke-width="2"/>
+  <text x="72" y="112" fill="#687386" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">VISUAL GRAMMAR</text>
+  <text x="72" y="154" fill="#111827" font-family="Arial, sans-serif" font-weight="700" font-size="34">Before / After Surface</text>
+  <text x="72" y="190" fill="#687386" font-family="Arial, sans-serif" font-size="18">before_after_surface</text>
+  <g transform="translate(72 238)"><rect x="38" y="70" width="230" height="420" rx="16" fill="#e8e1d5" stroke="#c9bfae"/><rect x="310" y="70" width="230" height="420" rx="16" fill="white" stroke="#087957" stroke-width="3"/><line x1="288" y1="58" x2="288" y2="510" stroke="#111827" stroke-width="4"/><path d="M236 280 C282 210 318 210 364 280" fill="none" stroke="#b07a32" stroke-width="7"/><rect x="112" y="552" width="352" height="72" rx="10" fill="#fff" stroke="#c9bfae"/></g>
+  <rect x="72" y="938" width="576" height="46" rx="6" fill="#e8e1d5" stroke="#c9bfae"/>
+  <text x="96" y="968" fill="#111827" font-family="Arial, sans-serif" font-size="18">Replace with generated preview when producing a real library.</text>
+</svg>

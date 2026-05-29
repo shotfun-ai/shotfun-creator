@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-label="Layer Stack visual grammar example">
+  <rect width="720" height="1080" fill="#f6f1e7"/>
+  <rect x="48" y="54" width="624" height="972" rx="22" fill="#fffaf1" stroke="#111827" stroke-width="2"/>
+  <text x="72" y="112" fill="#687386" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">VISUAL GRAMMAR</text>
+  <text x="72" y="154" fill="#111827" font-family="Arial, sans-serif" font-weight="700" font-size="34">Layer Stack</text>
+  <text x="72" y="190" fill="#687386" font-family="Arial, sans-serif" font-size="18">layer_stack</text>
+  <g transform="translate(72 238)"><path d="M96 125 L450 95 L522 136 L166 166 Z" fill="#1f5fae" opacity="0.16" stroke="#111827" stroke-width="2"/><path d="M96 201 L450 171 L522 212 L166 242 Z" fill="#087957" opacity="0.22" stroke="#111827" stroke-width="2"/><path d="M96 277 L450 247 L522 288 L166 318 Z" fill="#b07a32" opacity="0.28" stroke="#111827" stroke-width="2"/><path d="M96 353 L450 323 L522 364 L166 394 Z" fill="#b84b3f" opacity="0.33999999999999997" stroke="#111827" stroke-width="2"/><path d="M96 429 L450 399 L522 440 L166 470 Z" fill="#8b7b6a" opacity="0.4" stroke="#111827" stroke-width="2"/><rect x="134" y="570" width="310" height="68" rx="10" fill="white" stroke="#c9bfae"/></g>
+  <rect x="72" y="938" width="576" height="46" rx="6" fill="#e8e1d5" stroke="#c9bfae"/>
+  <text x="96" y="968" fill="#111827" font-family="Arial, sans-serif" font-size="18">Replace with generated preview when producing a real library.</text>
+</svg>

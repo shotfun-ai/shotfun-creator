@@ -1,0 +1,31 @@
+.DS_Store
+
+# Local credentials and per-machine config
+.env
+.env.*
+!.env.example
+.shotfun-agent/
+
+# Local generated outputs
+shotfun-output/
+outputs/
+manual-inputs/
+
+# One-off local production scripts with historical project paths/assets
+scripts/cli/*episode*.js
+scripts/cli/*episode*.py
+scripts/cli/*us-story*.js
+scripts/cli/*us-story*.py
+scripts/cli/compose-*.js
+scripts/cli/eagle-blood-*.js
+scripts/cli/build-asr-aligned-subtitles.py
+scripts/cli/enrich-review-workbench-storyboard-translations.js
+scripts/cli/enrich_review_workbench_storyboard_translations.py
+scripts/generate_eagle_blood_*.js
+
+# Dependencies and build/test artifacts
+node_modules/
+dist/
+build/
+coverage/
+*.log

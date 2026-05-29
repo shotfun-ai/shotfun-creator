@@ -1,0 +1,25 @@
+{
+  "name": "shotfun-creator-scripts",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "help": "node cli/run-template.js --help",
+    "dry-run": "node cli/run-template.js --project-code demo --task-code sd_reference --prompt \"Template smoke test\" --dry-run",
+    "dry-run:image": "node cli/image-generate.js --project-code demo --prompt \"A lake\" --dry-run",
+    "dry-run:image:agent-output": "node cli/image-generate.js --project-code demo --prompt \"A lake\" --dry-run --agent-output",
+    "dry-run:video": "node cli/video-generate.js --project-code demo --prompt \"A lake\" --image-url https://example.com/a.png --asset-mode none --dry-run",
+    "dry-run:video-process": "node cli/video-process.js --project-code demo --operation upscale --video-url https://example.com/a.mp4 --dry-run",
+    "dry-run:audio": "node cli/audio-generate.js --project-code demo --voice-name \"Narrator\" --text \"Hello\" --dry-run",
+    "dry-run:project-assets:group": "node cli/project-assets.js --project-code demo --action asset-group-create --name \"Hero refs\" --description \"Dry run asset group\" --dry-run",
+    "dry-run:project-assets:asset": "node cli/project-assets.js --project-code demo --action asset-create --group-id 123 --url https://example.com/hero.png --name hero --dry-run",
+    "dry-run:workflow": "node cli/run-workflow.js --workflow single-shot --project-code demo --prompt \"A lake opening shot\" --run-id dry-run-single-shot --dry-run",
+    "dry-run:one-shot": "node cli/one-shot.js --project-code demo --project-name \"Demo Project\" --prompt \"A lake opening shot\" --run-id dry-run-one-shot --dry-run",
+    "one-shot": "node cli/one-shot.js",
+    "dump:catalog": "node core/dump-model-catalog.js",
+    "doctor": "node cli/doctor.js",
+    "test": "node --test ../tests/core/*.test.js ../tests/services/*.test.js ../tests/workflows/*.test.js"
+  }
+}

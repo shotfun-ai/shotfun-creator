@@ -1,0 +1,57 @@
+{
+  "seriesTitle": "News Broadcast",
+  "title": "Demo News Briefing",
+  "subtitle": "Three concise signals from a prepared editorial packet",
+  "date": "2026-05-25",
+  "language": "en-US",
+  "narratorLabel": "NEWS DESK",
+  "cover": {
+    "dek": "A reusable HyperFrames broadcast built from structured input.",
+    "caption": "A quick scan of three prepared stories.",
+    "closeCaption": "That is the briefing."
+  },
+  "narration": {
+    "text": "Welcome to the demo briefing. First, a structured input file can now become a HyperFrames broadcast project. Second, each story carries a headline, summary, takeaway, optional source, and optional visual asset. Third, the workflow keeps rendering in HyperFrames so teams can inspect and refine the video package. Quick hits: the input format is reusable; the project writes a manifest; rendering can stay optional until the assets are ready. That is the briefing.",
+    "durationSeconds": 48
+  },
+  "stories": [
+    {
+      "id": "structured-input",
+      "title": "Structured input becomes the source",
+      "summary": "The workflow starts from a small JSON contract instead of one local daily AI news folder.",
+      "takeaway": "Any prepared news domain can feed the same broadcast shape.",
+      "durationSeconds": 11,
+      "bullets": [
+        "Title, summary, takeaway, and bullets are explicit.",
+        "Audio and visual files can be attached later."
+      ]
+    },
+    {
+      "id": "hyperframes-output",
+      "title": "HyperFrames remains the render surface",
+      "summary": "The workflow writes an editable HyperFrames project with HTML as the source of truth.",
+      "takeaway": "The team can preview, inspect, and render through the normal HyperFrames CLI.",
+      "durationSeconds": 11,
+      "bullets": [
+        "index.html, DESIGN.md, storyboard.json, and script.txt are generated.",
+        "MP4 rendering is opt-in with --render."
+      ]
+    },
+    {
+      "id": "shareable-agent",
+      "title": "The workflow fits shotfun-agent",
+      "summary": "The run writes manifests, step sidecars, and userArtifacts like the other workflows.",
+      "takeaway": "Colleagues can reuse the workflow without copying a private local skill.",
+      "durationSeconds": 11,
+      "bullets": [
+        "Dry-run validates the package shape.",
+        "ShotFun TTS can be enabled when needed."
+      ]
+    }
+  ],
+  "quickHits": [
+    { "label": "JSON", "text": "The input contract is domain-neutral." },
+    { "label": "HF", "text": "HyperFrames is still the actual video tool." },
+    { "label": "TEAM", "text": "The workflow can live under shotfun-agent." }
+  ]
+}

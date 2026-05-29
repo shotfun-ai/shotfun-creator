@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-label="Signal Board visual grammar example">
+  <rect width="720" height="1080" fill="#f6f1e7"/>
+  <rect x="48" y="54" width="624" height="972" rx="22" fill="#fffaf1" stroke="#111827" stroke-width="2"/>
+  <text x="72" y="112" fill="#687386" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">VISUAL GRAMMAR</text>
+  <text x="72" y="154" fill="#111827" font-family="Arial, sans-serif" font-weight="700" font-size="34">Signal Board</text>
+  <text x="72" y="190" fill="#687386" font-family="Arial, sans-serif" font-size="18">signal_board</text>
+  <g transform="translate(72 238)"><rect x="48" y="68" width="480" height="72" rx="10" fill="#ece3d4" stroke="#c9bfae"/><circle cx="92" cy="104" r="12" fill="#1f5fae"/><rect x="48" y="176" width="480" height="72" rx="10" fill="#fff" stroke="#c9bfae"/><circle cx="92" cy="212" r="12" fill="#087957"/><rect x="48" y="284" width="480" height="72" rx="10" fill="#ece3d4" stroke="#c9bfae"/><circle cx="92" cy="320" r="12" fill="#b07a32"/><rect x="48" y="392" width="480" height="72" rx="10" fill="#fff" stroke="#c9bfae"/><circle cx="92" cy="428" r="12" fill="#b84b3f"/><rect x="70" y="540" width="436" height="76" rx="12" fill="#111827" opacity=".88"/></g>
+  <rect x="72" y="938" width="576" height="46" rx="6" fill="#e8e1d5" stroke="#c9bfae"/>
+  <text x="96" y="968" fill="#111827" font-family="Arial, sans-serif" font-size="18">Replace with generated preview when producing a real library.</text>
+</svg>

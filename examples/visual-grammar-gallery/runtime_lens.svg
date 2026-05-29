@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-label="Runtime Lens visual grammar example">
+  <rect width="720" height="1080" fill="#f6f1e7"/>
+  <rect x="48" y="54" width="624" height="972" rx="22" fill="#fffaf1" stroke="#111827" stroke-width="2"/>
+  <text x="72" y="112" fill="#687386" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">VISUAL GRAMMAR</text>
+  <text x="72" y="154" fill="#111827" font-family="Arial, sans-serif" font-weight="700" font-size="34">Runtime Lens</text>
+  <text x="72" y="190" fill="#687386" font-family="Arial, sans-serif" font-size="18">runtime_lens</text>
+  <g transform="translate(72 238)"><circle cx="286" cy="300" r="132" fill="white" stroke="#1f5fae" stroke-width="6"/><circle cx="286" cy="300" r="70" fill="#1f5fae" opacity=".12"/><circle cx="94" cy="150" r="42" fill="#b07a32" opacity=".7"/><circle cx="510" cy="154" r="42" fill="#087957" opacity=".65"/><circle cx="98" cy="500" r="42" fill="#b84b3f" opacity=".5"/><circle cx="508" cy="500" r="42" fill="#1f5fae" opacity=".45"/><path d="M134 172 C210 94 360 92 468 172 M135 478 C220 560 365 560 470 478" fill="none" stroke="#c9bfae" stroke-width="3"/><rect x="160" y="640" width="252" height="58" rx="8" fill="#e8e1d5"/></g>
+  <rect x="72" y="938" width="576" height="46" rx="6" fill="#e8e1d5" stroke="#c9bfae"/>
+  <text x="96" y="968" fill="#111827" font-family="Arial, sans-serif" font-size="18">Replace with generated preview when producing a real library.</text>
+</svg>
