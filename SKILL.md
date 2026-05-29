@@ -90,7 +90,6 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 | 公众号封面图 | `task-skills/wechat-cover-image.md` | `node scripts/cli/image-generate.js ...` |
 | 小红书/RedNote 图片卡片或卡片系列 | `task-skills/xhs-images-gen.md` | `node scripts/cli/image-generate.js --model gpt-image2 ...` |
 | 任意内容生成图片、促销图、培训说明图 | `task-skills/universal-content-to-image.md` | 先设计 visual brief，再 `node scripts/cli/image-generate.js --model gpt-image2 ...` |
-| 抖音视频下载、本地保存 MP4 | `task-skills/douyin-video-download.md` | `node scripts/cli/douyin-download.js "<url>" --agent-output` |
 | 参考视频分析、抽帧和风格拆解 | `task-skills/reference-video-analysis.md` | `ffprobe` + `ffmpeg` 抽帧/contact sheet + 分析报告 |
 | 口播场景图生成 | `task-skills/talking-head-scene-image.md` | `node scripts/cli/image-generate.js ...` |
 | 真人口播风格视频 / 根据图片和口播稿生成完整口播视频 | `task-skills/scripted-talking-video.md` | 短稿走 single-shot；长稿或需穿插内容镜头时先做分镜和模型确认 |

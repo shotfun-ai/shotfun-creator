@@ -29,7 +29,6 @@ Each task skill should define:
 - `wechat-write-publish-allinone.md`: turn source content into a WeChat article package with title, cover, Markdown, and optional draft-box publishing.
 - `xhs-images-gen.md`: generate Xiaohongshu/RedNote vertical image cards or short card series from content.
 - `universal-content-to-image.md`: turn arbitrary content into a generated image such as product promo, training explainer, announcement, infographic card, or other content-driven visual.
-- `douyin-video-download.md`: download Douyin videos using local Chrome DevTools inspection and save an MP4 plus manifest.
 - `reference-video-analysis.md`: analyze a reference video by extracting metadata, frames/contact sheets, pacing, layout, and reusable style guidance.
 - `talking-head-scene-image.md`: generate a talking-head scene image from requirements, an anchor photo, and an optional scene photo.
 - `scripted-talking-video.md`: generate talking-head videos from a presenter image and script; supports simple single-shot mode and multi-shot presenter/B-roll packages.

@@ -6,7 +6,7 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 
 - `SKILL.md`：主 skill，负责理解用户目标，并路由到合适的工作流、任务 skill 或原子服务。
 - `workflow-skills/`：复杂工作流，例如默认口播内容生产。
-- `task-skills/`：输入输出明确的任务能力，例如公众号封面、抖音视频下载、参考视频分析、口播视频、声音、数字人等内容生产任务。
+- `task-skills/`：输入输出明确的任务能力，例如公众号封面、参考视频分析、口播视频、声音、数字人等内容生产任务。
 - `scripts/services/`：稳定的 API 原子服务，例如生图、图生视频、TTS、视频处理、素材管理等。
 
 优先使用能完整覆盖目标的最高层能力；只有没有合适 workflow/task skill 时，才下钻到 CLI 或 atomic service。
@@ -98,7 +98,6 @@ git pull --ff-only
 - `wechat-cover-image`：生成微信公众号封面图。
 - `xhs-images-gen`：生成小红书/RedNote 图片卡片。
 - `universal-content-to-image`：把任意内容生成展示图片，例如产品促销图、培训说明图、信息图等。
-- `douyin-video-download`：使用本地 Chrome DevTools 抓取抖音视频并保存 MP4 和 manifest。
 - `reference-video-analysis`：分析参考视频，抽帧、识别节奏、总结视觉风格。
 - `talking-head-scene-image`：根据要求、主播照片和可选场景图生成口播场景图。
 - `scripted-talking-video`：统一的口播视频生成 skill，支持短脚本单镜头和多镜头口播/B-roll 视频包。
@@ -219,7 +218,6 @@ Restart or reload your agent client again after updating, because `SKILL.md` and
 - `wechat-cover-image`: generate a WeChat article cover image.
 - `xhs-images-gen`: generate Xiaohongshu/RedNote image cards.
 - `universal-content-to-image`: turn arbitrary content into display images, product images, training explainer images, and similar visuals.
-- `douyin-video-download`: download Douyin videos with local Chrome DevTools inspection and save MP4 plus manifest for later analysis.
 - `reference-video-analysis`: analyze reference videos, extract frames, prepare ASR/transcript artifacts, and summarize reusable visual style.
 - `talking-head-scene-image`: generate a talking-head scene image.
 - `scripted-talking-video`: unified talking video generation skill supporting short single-shot talking-head videos and longer multi-shot presenter/B-roll packages.
