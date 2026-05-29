@@ -11,9 +11,10 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 
 1. 路由顺序：优先使用能完整覆盖用户目标的 workflow skill；其次使用 `task-skills/`；最后才下钻到 `scripts/cli/*.js` 或 `scripts/services/*.js` 原子能力。
 2. 前置约定：调用 ShotFun 前读取 `references/calling-conventions.md` 和 `references/output-conventions.md`；缺少 `SHOTFUN_API_KEY` 时只做 dry-run 或引导配置，不提交真实任务。
-3. 脚本归属：新增 skill 的专用脚本、模板、示例输入、参考素材配置和辅助工具必须放进对应 skill 目录；主项目 `scripts/` 只放跨 skill 复用的稳定底层能力。
-4. 安全边界：不要把 API Key、token、签名 URL、本机绝对路径、历史生成素材 URL、客户素材、私有项目名、角色资产或一次性生产参数硬编码到 skill 文件或主项目脚本中。
-5. 汇报约定：最终回复优先给用户可直接使用的产物链接/本地路径、`outputDir`、`manifest` 和关键模型参数；不要粘贴原始 API 响应、内部 `task` 对象或大段 JSON。
+3. 价格查询：当用户询问价格、费用、收费、积分、credits、成本或哪个模型更便宜时，先读取 `references/pricing.md`，按其中的价格表向用户展示相关条目；不要凭记忆报价。`references/model-catalog.md` 只作为模型选择目录，用户展示口径以 `references/pricing.md` 为准。
+4. 脚本归属：新增 skill 的专用脚本、模板、示例输入、参考素材配置和辅助工具必须放进对应 skill 目录；主项目 `scripts/` 只放跨 skill 复用的稳定底层能力。
+5. 安全边界：不要把 API Key、token、签名 URL、本机绝对路径、历史生成素材 URL、客户素材、私有项目名、角色资产或一次性生产参数硬编码到 skill 文件或主项目脚本中。
+6. 汇报约定：最终回复优先给用户可直接使用的产物链接/本地路径、`outputDir`、`manifest` 和关键模型参数；不要粘贴原始 API 响应、内部 `task` 对象或大段 JSON。
 
 新建 workflow/task skill 时，可在该 skill 目录下使用 `scripts/`、`templates/`、`examples/`、`references/` 等子目录承载专用内容。需要公开示例时，只使用无敏感信息的占位 URL 和最小示例数据。
 
@@ -121,7 +122,7 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 
 ### 1. 读 catalog
 
-每次调用前必读 `references/model-catalog.md`。该文件由 `scripts/core/dump-model-catalog.js` 从 `scripts/core/task-registry.js` 自动生成，包含所有可用 model 的 `key / priceTier / 推荐分 / 适用场景 / 能力约束 / 亮点 / 取舍`。registry 更新后必须重新运行脚本同步。
+每次调用前必读 `references/model-catalog.md`。该文件由 `scripts/core/dump-model-catalog.js` 从 `scripts/core/task-registry.js` 自动生成，包含所有可用 model 的 `key / priceTier / 推荐分 / 适用场景 / 能力约束 / 亮点 / 取舍`。registry 更新后必须重新运行脚本同步。用户询问价格或成本时，另读 `references/pricing.md`，并以该文件作为展示口径。
 
 不要凭记忆调用未在 catalog 中列出的 model key。
 
@@ -217,7 +218,7 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 - `video-scene`：包含多个协同镜头的单场景。
 - 通过 `--fetch-remote` 下载远程产物。
 - 导出可分享的 manifest 脱敏版本，隐藏私有/签名 URL。
-- `scripts/core/task-registry.js` 中经过真实校验的价格；当前价格标记为 `unverified`。
+- `scripts/core/task-registry.js` 中的价格只作为模型决策快照；用户询价以 `references/pricing.md` 为准。
 
 不要把未支持的工作流承诺为完整自动化能力。应提供最接近的已实现路径，并明确说明限制。
 
