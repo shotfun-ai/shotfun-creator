@@ -15,13 +15,13 @@ shotfun-creator 面向所有 AI 内容生产场景，是覆盖图片、视频、
 
 ### 推荐安装方式
 
-这是一个标准的 agent skill 项目。最简单的方式是复制 GitHub 地址，直接发给你的 agent 客户端，例如 Claude Code、Codex、Hermes、OpenClaw 或其他支持 skill 的客户端：
+这是一个标准的 agent skill 项目。最简单的方式是让你的 agent 客户端执行 `skills` CLI 安装命令，例如 Claude Code、Codex、Hermes、OpenClaw 或其他支持 skill 的客户端：
 
 ```text
-帮我把这个 GitHub 项目安装为 skill：https://github.com/shotfun-ai/shotfun-creator.git
+帮我安装这个 skill：npx skills add shotfun-ai/shotfun-creator
 ```
 
-agent 会帮你把项目 clone 到本地 skills 目录，并在需要时提示你重启或重新加载 skill。
+agent 会帮你通过 `npx skills add shotfun-ai/shotfun-creator` 安装到本地 skills 目录，并在需要时提示你重启或重新加载 skill。
 
 ### 手动安装
 
@@ -136,13 +136,13 @@ Use the highest layer that fully matches the user's intent. Drop down only when 
 
 This repository is a standard agent skill package.
 
-Recommended: copy the GitHub URL and send it directly to your agent client, such as Claude Code, Codex, Hermes, OpenClaw, or another skill-capable agent:
+Recommended: ask your agent client, such as Claude Code, Codex, Hermes, OpenClaw, or another skill-capable agent, to run the `skills` CLI install command:
 
 ```text
-Install this GitHub project as a skill: https://github.com/shotfun-ai/shotfun-creator.git
+Install this skill: npx skills add shotfun-ai/shotfun-creator
 ```
 
-The agent should clone it into its local skills directory and restart/reload skills if needed.
+The agent should install it with `npx skills add shotfun-ai/shotfun-creator` and restart/reload skills if needed.
 
 ### Manual Install
 
