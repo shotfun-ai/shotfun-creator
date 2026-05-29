@@ -7,14 +7,14 @@ Produce a complete talking-head content package from a user's content goal, scri
 Use this workflow when the user wants to:
 
 - generate a talking-head video from a script or topic;
-- create or reuse a presenter identity for repeated口播 runs;
+- create or reuse a presenter identity for repeated talking-head runs;
 - prepare a cover image together with the talking-head video;
 - keep scripts, prompts, video clips, cover images, and manifests organized for later regeneration;
-- turn a repeated口播 production pattern into the user's own reusable skill.
+- turn a repeated talking-head production pattern into the user's own reusable skill.
 
 Default deliverables:
 
-- confirmed口播形象图 / presenter image;
+- confirmed presenter image;
 - spoken script or exact-script segmentation;
 - talking-head video or ordered clip package;
 - optional cover image;
@@ -31,7 +31,7 @@ Default deliverables:
 
 Before submitting any real talking-head video task, complete these preparation steps:
 
-1. **Presenter image first**: generate or confirm the口播形象图 before video generation.
+1. **Presenter image first**: generate or confirm the presenter image before video generation.
 2. **Use `gpt-image2` (also referred to as gpt-image-2) by default for the presenter image** because it has strong instruction following and supports reference/editing workflows.
 3. Confirm the presenter image is suitable for video:
    - one clear person;
@@ -65,7 +65,7 @@ Because `gpt-image2` (also referred to as gpt-image-2) is a high price-tier mode
 
 ## Recommended Task Skills
 
-- `task-skills/universal-content-to-image.md`: generate the initial口播形象图 with `gpt-image2` (also referred to as gpt-image-2).
+- `task-skills/universal-content-to-image.md`: generate the initial presenter image with `gpt-image2` (also referred to as gpt-image-2).
 - `task-skills/talking-head-scene-image.md`: refine the presenter scene/image when an anchor photo or scene reference exists.
 - `task-skills/scripted-talking-video.md`: plan and generate the talking-head video or clip package.
 - `task-skills/wechat-cover-image.md` or `task-skills/universal-content-to-image.md`: generate a matching cover when requested.
